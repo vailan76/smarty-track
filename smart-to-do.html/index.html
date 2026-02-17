@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart To-Do Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+  <h1>⚡ Smart To-Do Pro</h1>
+
+  <div class="input-area">
+    <input id="taskInput" type="text" placeholder="Enter task...">
+
+    <div class="row">
+      <input id="dateInput" type="date">
+      <input id="timeInput" type="time">
+    </div>
+
+    <div class="row">
+      <select id="priority">
+        <option value="high">🔥 High</option>
+        <option value="medium">⚡ Medium</option>
+        <option value="low">🌿 Low</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
